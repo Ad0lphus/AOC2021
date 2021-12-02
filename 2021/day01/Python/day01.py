@@ -45,7 +45,7 @@ How many measurements are larger than the previous measurement?
 Your puzzle answer was _____.
 """
 
-with open("day1.txt", "r") as fd:
+with open("../Input/day1.txt", "r") as fd:
     data = [int(i) for i in fd.read().splitlines()]
 
 increased = 0

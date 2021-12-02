@@ -38,7 +38,7 @@ forward_2 = 0
 depth_2 = 0
 
 aim = 0
-f = open("day2.txt", "r")
+f = open("../Input/day2.txt", "r")
 for line in f:
     cmd,amt = line.split()
     amt = int(amt)
