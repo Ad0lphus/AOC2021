@@ -72,10 +72,11 @@ Your puzzle answer was ______________.
 #include <string>
 #include <vector>
 #include <algorithm>
+#include <bitset>
 
 using namespace std;
 
-int initial()
+int part_1()
 {
     ifstream f("../Input/day3.txt");
     vector<string> binaryNumbers;
@@ -132,9 +133,147 @@ int initial()
     return 0;
 }
 
+void part_2(const string &path)
+{
+    fstream stream;
+    vector<string> binNumbers;
+    stream.open(path);
+
+    int k = 1;
+    binNumbers.resize(k);
+    while(!stream.eof())
+    {
+        binNumbers.resize(k);
+        getline(stream, binNumbers[k - 1]);
+        k++;
+    }
+    stream.close();
+
+    vector<string> ogRate;
+    ogRate.resize(binNumbers.size());
+    int o = 0;
+    for(const string& f : binNumbers)
+    {
+        ogRate[o] = f;
+        o++;
+    }
+
+    int m = 0;
+    while(ogRate.size() != 1)
+    {
+        int zero(0), one(0);
+        for(string j : ogRate)
+        {
+                int currentInt = (int)j[m] - 48;
+                if(currentInt == 1) one++;
+                else zero++;
+        }
+
+        char bitCriteria;
+        if(one >= zero)
+        {
+            bitCriteria = '1';
+        }
+        else
+        {
+            bitCriteria = '0';
+        }
+
+        bool isAllAtCriteria = false;
+        int i = 0;
+        while(!isAllAtCriteria)
+        {
+            if(ogRate[i].at(m) != bitCriteria)
+            {
+                ogRate.erase(ogRate.begin() + i);
+                i = 0;
+                isAllAtCriteria = true;
+
+                for(string k : ogRate)
+                    if(k.at(m) != bitCriteria)
+                    {
+                        isAllAtCriteria = false;
+                        break;
+                    }
+            }
+            else i++;
+        }
+        m++;
+    }
+
+    vector<string> co2Rate;
+    co2Rate.resize(binNumbers.size());
+    int o1 = 0;
+    for(const string& f : binNumbers)
+    {
+        co2Rate[o1] = f;
+        o1++;
+    }
+    int l = 0;
+    while(co2Rate.size() != 1)
+    {
+        int zero(0), one(0);
+        for(string j : co2Rate)
+        {
+            int currentInt = (int)j[l] - 48;
+            if(currentInt == 1) one++;
+            else zero++;
+        }
+
+        char bitCriteria;
+        if(zero <= one)
+        {
+            bitCriteria = '0';
+        }
+        else
+        {
+            bitCriteria = '1';
+        }
+
+        bool isAllAtCriteria = false;
+        int i = 0;
+        while(!isAllAtCriteria)
+        {
+            if(co2Rate[i].at(l) != bitCriteria)
+            {
+                co2Rate.erase(co2Rate.begin() + i);
+                i = 0;
+                isAllAtCriteria = true;
+
+                for(string u : co2Rate)
+                    if(u.at(l) != bitCriteria)
+                        isAllAtCriteria = false;
+            }
+            else i++;
+        }
+
+        l++;
+    }
+
+    unsigned long ogRateInt = bitset<64>(ogRate[0]).to_ulong(), co2RateInt = bitset<64>(co2Rate[0]).to_ulong();
+
+    cout << ogRateInt * co2RateInt;
+}
+
+struct Bits
+{
+    int zero;
+    int one;
+};
 
 int main()
 {
-    initial();
+    part_1();
+    string path;
+    fstream fileStream;
+    
+    fileStream.open("../Input/day3.txt");
+    if(fileStream.is_open())
+    {
+        fileStream.close();
+        cout << "puzzle 2: ";
+        part_2("../Input/day3.txt");
+
+    }
     return 0;
 }
