@@ -8,9 +8,9 @@ Implementations of various programming puzzles should expose vulnerabilities, bu
 ### Progress
 
 
-| Day | Name | Python | CPP |
-|:---:|:---|:---:|:---:|
-| - | Advent of Code 2021 | - | - |
-| 01 | [Sonar Sweep](https://adventofcode.com/2021/day/1) | ✓ | ✓ |
-| 02 | [Dive](https://adventofcode.com/2021/day/2) | ✓ | ✓ |
-| 03 | [Binary Diagnostic](https://adventofcode.com/2021/day/3) | ✓ | ✓ |
+| Day | Name | Python | CPP | Stars |
+|:---:|:---|:---:|:---:| * * |
+| - | Advent of Code 2021 | - | - | * * |
+| 01 | [Sonar Sweep](https://adventofcode.com/2021/day/1) | ✓ | ✓ | * * |
+| 02 | [Dive](https://adventofcode.com/2021/day/2) | ✓ | ✓ | * * |
+| 03 | [Binary Diagnostic](https://adventofcode.com/2021/day/3) | ✓ | ✓ | * * |
