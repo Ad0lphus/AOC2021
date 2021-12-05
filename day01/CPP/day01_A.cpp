@@ -62,6 +62,6 @@ int main()
         }
         prev = curr;
     }
-    cout << count-1 << endl;
+    cout << "puzzle 1: " << count-1 << endl;
     return 0;
 }

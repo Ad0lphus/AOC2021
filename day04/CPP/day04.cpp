@@ -6,9 +6,20 @@
 #include <cstdio>
 #include <cstdlib>
 #include <bits/stdc++.h>
-
+#include <iostream>
+#include <string>
+#include <cstring>
+#include <cstdlib>
+#include <unistd.h>
 using namespace std;
 
+void print_title() {
+    string stuff(25, '-');
+    cout << "\033[1;33m";
+    cout << stuff <<"Advent of Code - Day 4"  << stuff  << endl;
+    cout << "\033[0m";
+    cout << string(40, ' ') << endl;
+}
 constexpr bool win_checker(const array<int, 25> &board, int row, int col)
 {
 	int sum = 0;
@@ -24,6 +35,33 @@ constexpr bool win_checker(const array<int, 25> &board, int row, int col)
 
 int main()
 {
+	print_title();
+    // run terminal command in c++
+    string cmd = "figlet Giant Squid -c -f small";
+    char *command_char = new char[cmd.length() + 1];
+    strcpy(command_char, cmd.c_str());
+    // store the output of the command in a string
+    string output = "";
+    char buffer[128];
+    FILE *fp;
+    fp = popen(command_char, "r");
+    if (fp == NULL)
+    {
+        cout << "Failed to run command" << endl;
+        return 1;
+    }
+    while (fgets(buffer, sizeof(buffer), fp) != NULL)
+    {
+        output += buffer;
+    }
+    pclose(fp);
+    cout << "\033[0;32m";
+    cout << output << endl;
+    cout << "\033[0m" << endl;
+    string stuff(33, '-');
+    cout << "\033[1;33m";
+    cout << stuff <<"Output"  << stuff  << endl;
+    cout << "\033[0m" << endl;
 	string line;
 	ifstream in("../Input/day4.txt");
 	getline(in, line);
@@ -82,5 +120,8 @@ int main()
 		vector_X = move(remaining);
 	}
 	cout << "puzzle 2: " << score << endl;
+	string stuff_final(72, '=');
+    cout << endl;
+    cout << stuff_final << endl;
 	return 0;
 }

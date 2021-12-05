@@ -11,14 +11,14 @@ using namespace std;
 void print_title() {
     string stuff(25, '-');
     cout << "\033[1;33m";
-    cout << stuff <<"Advent of Code - Day 1"  << stuff  << endl;
+    cout << stuff <<"Advent of Code - Day 5"  << stuff  << endl;
     cout << "\033[0m";
     cout << string(40, ' ') << endl;
 }
 int main(){
     print_title();
     // run terminal command in c++
-    string cmd = "figlet Sonar Sweep -c -f small";
+    string cmd = "figlet Hydrothermal Venture -c -f small";
     char *command_char = new char[cmd.length() + 1];
     strcpy(command_char, cmd.c_str());
     // store the output of the command in a string
@@ -43,9 +43,9 @@ int main(){
     cout << "\033[1;33m";
     cout << stuff <<"Output"  << stuff  << endl;
     cout << "\033[0m" << endl;
-    string command = "./binary/day01A";
+    string command = "./binary/day05A";
     system(command.c_str());
-    command = "./binary/day01B";
+    command = "./binary/day05B";
     system(command.c_str());
     string stuff_final(72, '=');
     cout << endl;

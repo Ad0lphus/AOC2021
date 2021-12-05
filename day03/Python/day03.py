@@ -66,6 +66,11 @@ Use the binary numbers in your diagnostic report to calculate the oxygen generat
 
 Your puzzle answer was ________.
 '''
+from termcolor import colored
+from pyfiglet import *
+print(colored("Advent of Code - Day 3", "yellow").center(80, "-"))
+print(colored(figlet_format("Binary Diagnostic",font="small",justify="center"), 'green'))
+print(colored("Output","yellow").center(80, "-"))
 f = open("../Input/day3.txt", "r")
 binaryNumbers = [line.strip() for line in f.readlines()]
 
@@ -89,7 +94,7 @@ for i in range(0,length_of_bits):
 gammaRate = ''.join(gammaRate)
 epsilonRate = ''.join(epsilonRate)
 
-print("puzzle 1: ",int(gammaRate,2)*int(epsilonRate,2))
+print("\npuzzle 1: ",int(gammaRate,2)*int(epsilonRate,2))
 
 def get_num(binaryNumbers,gas):
     numbers = binaryNumbers.copy()
@@ -120,4 +125,5 @@ def get_num(binaryNumbers,gas):
 o2_num = get_num(binaryNumbers,'o2')
 co2_num = get_num(binaryNumbers,'co2')
 
-print("puzzle 2: ",o2_num * co2_num)    
+print("puzzle 2: ",o2_num * co2_num,"\n")    
+print(colored("=".center(71, "="), "yellow"))

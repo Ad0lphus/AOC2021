@@ -60,5 +60,5 @@ int main() {
         sum2 += (t[3] - t[0]);
         if (sum2 > sum1) count_inc++;
     };
-    cout << count_inc << endl;
+    cout << "puzzle 2: " << count_inc << endl;
 }

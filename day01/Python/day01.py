@@ -44,7 +44,11 @@ How many measurements are larger than the previous measurement?
 
 Your puzzle answer was _____.
 """
-
+from termcolor import colored
+from pyfiglet import *
+print(colored("Advent of Code - Day 1", "yellow").center(80, "-"))
+print(colored(figlet_format("Sonar Sweep",font="small",justify="center"), 'green'))
+print(colored("Output","yellow").center(80, "-"))
 with open("../Input/day1.txt", "r") as fd:
     data = [int(i) for i in fd.read().splitlines()]
 
@@ -54,7 +58,7 @@ for i in range(1, len(data)):
     if data[i] > data[i - 1]:
         increased += 1
 
-print("puzzle 1: ",increased)
+print("\npuzzle 1: ",increased)
 
 """
 --- Part Two ---
@@ -104,4 +108,5 @@ for i in range(0, len(data)):
 
     pwindow = cwindow
 
-print("puzzle 2: ",increased)
+print("puzzle 2: ",increased,"\n")
+print(colored("=".center(71, "="), "yellow"))

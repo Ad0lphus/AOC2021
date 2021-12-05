@@ -31,6 +31,11 @@ Calculate the horizontal position and depth you would have after following the p
 
 Your puzzle answer was _______.
 '''
+from termcolor import colored
+from pyfiglet import *
+print(colored("Advent of Code - Day 2", "yellow").center(80, "-"))
+print(colored(figlet_format("Dive!",font="small",justify="center"), 'green'))
+print(colored("Output","yellow").center(80, "-"))
 forward_1 = 0
 depth_1 = 0
 
@@ -53,7 +58,7 @@ for line in f:
         assert cmd == 'down'
         depth_1 += amt
         aim += amt
-print("puzzle 1: ",forward_1 * depth_1)
+print("\npuzzle 1: ",forward_1 * depth_1)
 
 '''
 --- Part Two ---
@@ -82,4 +87,5 @@ Using this new interpretation of the commands, calculate the horizontal position
 
 Your puzzle answer was __________.
 '''
-print("puzzle 2: ",forward_2 * depth_2)
+print("puzzle 2: ",forward_2 * depth_2,"\n")
+print(colored("=".center(71, "="), "yellow"))
