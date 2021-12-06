@@ -16,4 +16,4 @@ Implementations of various programming puzzles should expose vulnerabilities, bu
 | 03 | [Binary Diagnostic](https://adventofcode.com/2021/day/3) | ✓ | ✓ | ⭐️ ⭐️ |
 | 04 | [Giant Squid](https://adventofcode.com/2021/day/4) | ✓ | ✓ | ⭐️ ⭐️ |
 | 05 | [Hydrothermal Venture](https://adventofcode.com/2021/day/5) | ✓ | ✓ | ⭐️ ⭐️ |
-| 05 | [Lanternfish](https://adventofcode.com/2021/day/6) | ✓ | ✓ | ⭐️ ⭐️ |
+| 06 | [Lanternfish](https://adventofcode.com/2021/day/6) | ✓ | ✓ | ⭐️ ⭐️ |
