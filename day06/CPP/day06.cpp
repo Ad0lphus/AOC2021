@@ -85,6 +85,31 @@ void print_title() {
     cout << stuff <<"Advent of Code - Day 6"  << stuff  << endl;
     cout << "\033[0m";
     cout << string(40, ' ') << endl;
+    // run terminal command in c++
+    string cmd = "figlet Lanternfish -c -f small";
+    char *command_char = new char[cmd.length() + 1];
+    strcpy(command_char, cmd.c_str());
+    // store the output of the command in a string
+    string output = "";
+    char buffer[128];
+    FILE *fp;
+    fp = popen(command_char, "r");
+    if (fp == NULL)
+    {
+        cout << "Failed to run command" << endl;
+    }
+    while (fgets(buffer, sizeof(buffer), fp) != NULL)
+    {
+        output += buffer;
+    }
+    pclose(fp);
+    cout << "\033[0;32m";
+    cout << output << endl;
+    cout << "\033[0m" << endl;
+    string stufff(33, '-');
+    cout << "\033[1;33m";
+    cout << stufff <<"Output"  << stufff  << endl;
+    cout << "\033[0m" << endl;
 }
 static uint64_t solver(array<uint64_t, 9> fishes, int days)
 {
@@ -110,32 +135,6 @@ static uint64_t solver(array<uint64_t, 9> fishes, int days)
 int main()
 {
     print_title();
-    // run terminal command in c++
-    string cmd = "figlet Lanternfish -c -f small";
-    char *command_char = new char[cmd.length() + 1];
-    strcpy(command_char, cmd.c_str());
-    // store the output of the command in a string
-    string output = "";
-    char buffer[128];
-    FILE *fp;
-    fp = popen(command_char, "r");
-    if (fp == NULL)
-    {
-        cout << "Failed to run command" << endl;
-        return 1;
-    }
-    while (fgets(buffer, sizeof(buffer), fp) != NULL)
-    {
-        output += buffer;
-    }
-    pclose(fp);
-    cout << "\033[0;32m";
-    cout << output << endl;
-    cout << "\033[0m" << endl;
-    string stuff(33, '-');
-    cout << "\033[1;33m";
-    cout << stuff <<"Output"  << stuff  << endl;
-    cout << "\033[0m" << endl;
     array<uint64_t, 9> fishes = {0};
     uint64_t n;
     ifstream in("../Input/day6.txt");
