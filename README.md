@@ -20,3 +20,4 @@ Implementations of various programming puzzles should expose vulnerabilities, bu
 | 07 | [The Treachery of Whales](https://adventofcode.com/2021/day/7) | ✓ | ✓ | ⭐️ ⭐️ | 00:07:03 |
 | 08 | [Seven Segment Search](https://adventofcode.com/2021/day/8) | ✓ | ✓ | ⭐️ ⭐️ | 00:21:24 |
 | 09 | [Smoke Basin](https://adventofcode.com/2021/day/9) | ✓ | ✓ | ⭐️ ⭐️ | 00:18:43 |
+| 10 | [Syntax Scoring](https://adventofcode.com/2021/day/10) | ✓ | ✓ | ⭐️ ⭐️ | 00:12:51 |
