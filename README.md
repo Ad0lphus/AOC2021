@@ -22,3 +22,4 @@ Implementations of various programming puzzles should expose vulnerabilities, bu
 | 09 | [Smoke Basin](https://adventofcode.com/2021/day/9) | ✓ | ✓ | ⭐️ ⭐️ | 00:18:43 |
 | 10 | [Syntax Scoring](https://adventofcode.com/2021/day/10) | ✓ | ✓ | ⭐️ ⭐️ | 00:12:51 |
 | 11 | [Dumbo Octopus](https://adventofcode.com/2021/day/11) | ✓ | ✓ | ⭐️ ⭐️ | 00:10:39 |
+| 12 | [Passage Pathing](https://adventofcode.com/2021/day/12) | ✓ | ✓ | ⭐️ ⭐️ | 00:13:59 |
