@@ -24,3 +24,4 @@ Implementations of various programming puzzles should expose vulnerabilities, bu
 | 11 | [Dumbo Octopus](https://adventofcode.com/2021/day/11) | ✓ | ✓ | ⭐️ ⭐️ | 00:10:39 |
 | 12 | [Passage Pathing](https://adventofcode.com/2021/day/12) | ✓ | ✓ | ⭐️ ⭐️ | 00:13:59 |
 | 13 | [Transparent Origami](https://adventofcode.com/2021/day/13) | ✓ | ✓ | ⭐️ ⭐️ | 00:27:56 |
+| 14 | [Extended Polymerization](https://adventofcode.com/2021/day/14) | ✓ | ✓ | ⭐️ ⭐️ | 00:17:13 |
