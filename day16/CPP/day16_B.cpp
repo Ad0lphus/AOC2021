@@ -121,7 +121,7 @@ pair<long long, long long> parse(vector<long long>& binary, long long src){
 
 int main(){
    	ios_base::sync_with_stdio(false);
-    ifstream input_file("../../Input/day16.txt");
+    ifstream input_file("../Input/day16.txt");
 	string input;
 	input_file >> input;
 
