@@ -27,3 +27,4 @@ Implementations of various programming puzzles should expose vulnerabilities, bu
 | 14 | [Extended Polymerization](https://adventofcode.com/2021/day/14) | ✓ | ✓ | ⭐️ ⭐️ | 00:17:13 |
 | 15 | [Chiton](https://adventofcode.com/2021/day/15) | ✓ | ✓ | ⭐️ ⭐️ | 00:23:36 |
 | 16 | [Packet Decoder](https://adventofcode.com/2021/day/16) | ✓ | ✓ | ⭐️ ⭐️ | 00:24:28 |
+| 17 | [Trick Shot](https://adventofcode.com/2021/day/17) | ✓ | ✓ | ⭐️ ⭐️ | 00:29:26 |
