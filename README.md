@@ -6,7 +6,7 @@ Implementations of various programming puzzles should expose vulnerabilities, bu
 
 
 ### Progress
-
+---
 
 | Day | Name | Python | CPP | Stars | Time |
 |:---:|:---|:---:|:---:|:---:|:---:|
