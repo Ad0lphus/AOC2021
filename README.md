@@ -30,4 +30,5 @@ Implementations of various programming puzzles should expose vulnerabilities, bu
 | 17 | [Trick Shot](https://adventofcode.com/2021/day/17) | ✓ | ✓ | ⭐️ ⭐️ | 00:29:26 |  |
 | 18 | [Snailfish](https://adventofcode.com/2021/day/18) | ✓ | ✓ | ⭐️ ⭐️ | 00:38:22 | ✓ |
 | 19 | [Beacon Scanner](https://adventofcode.com/2021/day/19) | ✓ | ✓ | ⭐️ ⭐️ | 01:20:50 |  |
-| 20 | [Trench Map](https://adventofcode.com/2021/day/12) | ✓ | ✓ | ⭐️ ⭐️ | 02:11:36 | late :/ |
+| 20 | [Trench Map](https://adventofcode.com/2021/day/20) | ✓ | ✓ | ⭐️ ⭐️ | 02:11:36 | late :/ |
+| 21 | [Dirac Dice](https://adventofcode.com/2021/day/21) | ✓ | ✓ | ⭐️ ⭐️ | 00:29:27 |  |
