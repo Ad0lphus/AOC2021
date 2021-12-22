@@ -2,6 +2,7 @@ import java.io.*
 import java.io.File
 
 fun print_day_1() {
+    
     val yellow = "\u001B[33m"
     val reset = "\u001b[0m"
     val green = "\u001B[32m"
