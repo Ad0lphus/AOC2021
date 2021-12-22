@@ -16,14 +16,14 @@ fun print_day_6() {
 }
 fun main() {
     print_day_6()
-    Day6().puzzle1()
-    Day6().puzzle2()
+    Day6().part_1()
+    Day6().part_2()
     println("\n" + "\u001B[33m" + "=".repeat(72) + "\u001b[0m" + "\n")
 }
 
 class Day6 {
     val fish = File("../Input/day6.txt").readLines().first().split(",").map{it.toInt()}.toMutableList()
-    fun puzzle1() {
+    fun part_1() {
         for(i in 1..80) {
             val newFish = mutableListOf<Int>()
             for (idx in fish.indices) {
@@ -39,7 +39,7 @@ class Day6 {
         }
         println("Puzzle 1: ${fish.size}")
     }
-    fun puzzle2() {
+    fun part_2() {
         data class NewFish(var age: Int, val numNewFish:Long)
         val spawnedFish = mutableListOf<NewFish>()
         for(i in 1..256) {
