@@ -10,7 +10,6 @@ fun print_day_9() {
     val reader = BufferedReader(InputStreamReader(process.inputStream))
     reader.forEachLine { println(it) }
     println(reset)
-
     println(yellow + "-".repeat(33) + "Output" + "-".repeat(33) + reset + "\n")
 }
 fun main() {
@@ -71,6 +70,5 @@ class Day9 {
             .reduce { total, next -> total * next }
 
         println("Puzzle 2: $answer")
-
     }
 }
