@@ -14,8 +14,8 @@ fun print_day_17() {
 
 fun main() {
     print_day_17() 
-    println("Puzzle 1: ${Day17().puzzle1()}")
-    println("Puzzle 2: ${Day17().puzzle2()}")
+    println("Puzzle 1: ${Day17().part_1()}")
+    println("Puzzle 2: ${Day17().part_2()}")
     println("\n" + "\u001B[33m" + "=".repeat(72) + "\u001b[0m" + "\n")
 }
 
@@ -27,8 +27,8 @@ class Day17 {
         .let { BoundingBox(it[0], it[1]) }
 
 
-    fun puzzle1() = (1..400).flatMap { x -> (1..400).map { y -> checkStep(x, y, target) } }.fold(0) { max, step -> if (step.first) maxOf(max, step.second) else max }
-    fun puzzle2() = (1..400).flatMap { x -> (-400..400).map { y -> checkStep(x, y, target).first } }.count { it }
+    fun part_1() = (1..400).flatMap { x -> (1..400).map { y -> checkStep(x, y, target) } }.fold(0) { max, step -> if (step.first) maxOf(max, step.second) else max }
+    fun part_2() = (1..400).flatMap { x -> (-400..400).map { y -> checkStep(x, y, target).first } }.count { it }
 
 
     data class Coord(var x:Int, var y:Int)
