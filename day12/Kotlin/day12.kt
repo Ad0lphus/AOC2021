@@ -13,8 +13,8 @@ fun print_day_12() {
 }
 fun main() {
     print_day_12()
-    Day12().puzzle1()
-    Day12().puzzle2()
+    Day12().part_1()
+    Day12().part_2()
     println("\n" + "\u001B[33m" + "=".repeat(72) + "\u001b[0m" + "\n")
 }
 
@@ -22,7 +22,7 @@ class Day12 {
 
     data class Node(val name: String, val isLarge: Boolean = false, var connections: List<Node> = mutableListOf())
 
-    fun puzzle1() {
+    fun part_1() {
         val nodes = mutableMapOf<String, Node>()
 
         fun followPaths(node: Node, path: List<Node>): List<List<Node>> {
@@ -53,7 +53,7 @@ class Day12 {
         println("Puzzle 1: ${paths.size}")
 
     }
-    fun puzzle2() {
+    fun part_2() {
         val nodes = HashMap<String, HashSet<String>>()
 
         File("../Input/day12.txt").readLines().forEach {
