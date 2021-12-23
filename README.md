@@ -32,3 +32,4 @@ Implementations of various programming puzzles should expose vulnerabilities, bu
 | 19 | [Beacon Scanner](https://adventofcode.com/2021/day/19) | ✓ | ✓ | ⭐️ ⭐️ | 01:20:50 |  |
 | 20 | [Trench Map](https://adventofcode.com/2021/day/20) | ✓ | ✓ | ⭐️ ⭐️ | 02:11:36 | late :/ |
 | 21 | [Dirac Dice](https://adventofcode.com/2021/day/21) | ✓ | ✓ | ⭐️ ⭐️ | 00:29:27 |  |
+| 22 | [Reactor Reboot](https://adventofcode.com/2021/day/22) | ✓ | ✓ | ⭐️ ⭐️ | 00:51:17 |  |
