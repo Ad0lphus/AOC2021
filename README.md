@@ -33,3 +33,4 @@ Implementations of various programming puzzles should expose vulnerabilities, bu
 | 20 | [Trench Map](https://adventofcode.com/2021/day/20) | ✓ | ✓ |  | ⭐️ ⭐️ | 02:11:36 | late :/ |
 | 21 | [Dirac Dice](https://adventofcode.com/2021/day/21) | ✓ | ✓ |  | ⭐️ ⭐️ | 00:29:27 |  |
 | 22 | [Reactor Reboot](https://adventofcode.com/2021/day/22) | ✓ | ✓ |  | ⭐️ ⭐️ | 00:51:17 |  |
+| 23 | [Amphipod](https://adventofcode.com/2021/day/23) | ✓ | ✓ |  | ⭐️ ⭐️ | 01:33:29 |  |
