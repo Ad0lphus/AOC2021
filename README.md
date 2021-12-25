@@ -45,4 +45,4 @@ cd AOC2021
 python3 main.py
 ```
 
-![img](https://i.imgur.com/i7GomLo.gif)
+![](https://i.imgur.com/i7GomLo.gif)
