@@ -34,8 +34,8 @@ Implementations of various programming puzzles should expose vulnerabilities, bu
 | 21 | [Dirac Dice](https://adventofcode.com/2021/day/21) | ✓ | ✓ | ✓ | ⭐️ ⭐️ | 00:29:27 |  |
 | 22 | [Reactor Reboot](https://adventofcode.com/2021/day/22) | ✓ | ✓ | ✓ | ⭐️ ⭐️ | 00:51:17 |  |
 | 23 | [Amphipod](https://adventofcode.com/2021/day/23) | ✓ | ✓ | ✓ | ⭐️ ⭐️ | 01:33:29 |  |
-| 23 | [Arithmetic Logic Unit](https://adventofcode.com/2021/day/24) | ✓ | ✓ | ✓ | ⭐️ ⭐️ | 01:19:39 |  |
-| 23 | [Sea Cucumber](https://adventofcode.com/2021/day/25) | ✓ | ✓ | ✓ | ⭐️ ⭐️ | 00:15:35 |  |
+| 24 | [Arithmetic Logic Unit](https://adventofcode.com/2021/day/24) | ✓ | ✓ | ✓ | ⭐️ ⭐️ | 01:19:39 |  |
+| 25 | [Sea Cucumber](https://adventofcode.com/2021/day/25) | ✓ | ✓ | ✓ | ⭐️ ⭐️ | 00:15:35 |  |
 
 ## Quick Start
 
